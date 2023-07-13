@@ -1,0 +1,2 @@
+(this.webpackJsonplove_creators=this.webpackJsonplove_creators||[]).push([[0],{11:function(e,t,n){"use strict";n.r(t);n(1);var c=n(3),r=n.n(c),s=(n(8),n(9),n(0)),o=function(){return Object(s.jsx)("div",{className:"starter",children:Object(s.jsx)("p",{children:"Kittens"})})};r.a.render(Object(s.jsx)(o,{}),document.getElementById("root"))},8:function(e,t,n){},9:function(e,t,n){}},[[11,1,2]]]);
+//# sourceMappingURL=main.b0d71bba.chunk.js.map
