@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.5b131896.chunk.css",
-    "main.js": "./static/js/main.b0d71bba.chunk.js",
-    "main.js.map": "./static/js/main.b0d71bba.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.effeb58b.js",
-    "runtime-main.js.map": "./static/js/runtime-main.effeb58b.js.map",
-    "static/js/2.32f58435.chunk.js": "./static/js/2.32f58435.chunk.js",
-    "static/js/2.32f58435.chunk.js.map": "./static/js/2.32f58435.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/main.5b131896.chunk.css.map": "./static/css/main.5b131896.chunk.css.map",
-    "static/js/2.32f58435.chunk.js.LICENSE.txt": "./static/js/2.32f58435.chunk.js.LICENSE.txt"
+    "main.css": "/sweetness/static/css/main.5b131896.chunk.css",
+    "main.js": "/sweetness/static/js/main.b0d71bba.chunk.js",
+    "main.js.map": "/sweetness/static/js/main.b0d71bba.chunk.js.map",
+    "runtime-main.js": "/sweetness/static/js/runtime-main.b49752b6.js",
+    "runtime-main.js.map": "/sweetness/static/js/runtime-main.b49752b6.js.map",
+    "static/js/2.32f58435.chunk.js": "/sweetness/static/js/2.32f58435.chunk.js",
+    "static/js/2.32f58435.chunk.js.map": "/sweetness/static/js/2.32f58435.chunk.js.map",
+    "index.html": "/sweetness/index.html",
+    "static/css/main.5b131896.chunk.css.map": "/sweetness/static/css/main.5b131896.chunk.css.map",
+    "static/js/2.32f58435.chunk.js.LICENSE.txt": "/sweetness/static/js/2.32f58435.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.effeb58b.js",
+    "static/js/runtime-main.b49752b6.js",
     "static/js/2.32f58435.chunk.js",
     "static/css/main.5b131896.chunk.css",
     "static/js/main.b0d71bba.chunk.js"
