@@ -1,20 +1,28 @@
 {
   "files": {
-    "main.css": "/sweetness/static/css/main.5b131896.chunk.css",
-    "main.js": "/sweetness/static/js/main.b0d71bba.chunk.js",
-    "main.js.map": "/sweetness/static/js/main.b0d71bba.chunk.js.map",
+    "main.css": "/sweetness/static/css/main.059b6865.chunk.css",
+    "main.js": "/sweetness/static/js/main.33b74ec6.chunk.js",
+    "main.js.map": "/sweetness/static/js/main.33b74ec6.chunk.js.map",
     "runtime-main.js": "/sweetness/static/js/runtime-main.b49752b6.js",
     "runtime-main.js.map": "/sweetness/static/js/runtime-main.b49752b6.js.map",
-    "static/js/2.32f58435.chunk.js": "/sweetness/static/js/2.32f58435.chunk.js",
-    "static/js/2.32f58435.chunk.js.map": "/sweetness/static/js/2.32f58435.chunk.js.map",
+    "static/css/2.0d8cb1d1.chunk.css": "/sweetness/static/css/2.0d8cb1d1.chunk.css",
+    "static/js/2.b16d2310.chunk.js": "/sweetness/static/js/2.b16d2310.chunk.js",
+    "static/js/2.b16d2310.chunk.js.map": "/sweetness/static/js/2.b16d2310.chunk.js.map",
     "index.html": "/sweetness/index.html",
-    "static/css/main.5b131896.chunk.css.map": "/sweetness/static/css/main.5b131896.chunk.css.map",
-    "static/js/2.32f58435.chunk.js.LICENSE.txt": "/sweetness/static/js/2.32f58435.chunk.js.LICENSE.txt"
+    "static/css/2.0d8cb1d1.chunk.css.map": "/sweetness/static/css/2.0d8cb1d1.chunk.css.map",
+    "static/css/main.059b6865.chunk.css.map": "/sweetness/static/css/main.059b6865.chunk.css.map",
+    "static/js/2.b16d2310.chunk.js.LICENSE.txt": "/sweetness/static/js/2.b16d2310.chunk.js.LICENSE.txt",
+    "static/media/congratulation_photo.69b9c70c.jpg": "/sweetness/static/media/congratulation_photo.69b9c70c.jpg",
+    "static/media/congratulation_silhoutte.929c0f08.png": "/sweetness/static/media/congratulation_silhoutte.929c0f08.png",
+    "static/media/greeting_photo.5e0cc134.jpg": "/sweetness/static/media/greeting_photo.5e0cc134.jpg",
+    "static/media/greeting_silhoutte.1134b5fb.png": "/sweetness/static/media/greeting_silhoutte.1134b5fb.png",
+    "static/media/kiss.0056cc94.png": "/sweetness/static/media/kiss.0056cc94.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b49752b6.js",
-    "static/js/2.32f58435.chunk.js",
-    "static/css/main.5b131896.chunk.css",
-    "static/js/main.b0d71bba.chunk.js"
+    "static/css/2.0d8cb1d1.chunk.css",
+    "static/js/2.b16d2310.chunk.js",
+    "static/css/main.059b6865.chunk.css",
+    "static/js/main.33b74ec6.chunk.js"
   ]
 }
