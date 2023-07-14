@@ -1,0 +1,85 @@
+@import '../../utils/variables.scss';
+
+@keyframes kiss {
+  0% {
+    opacity: 0;
+    transform:translateY(-85px) translateX(25px) scale(0) rotate(20deg) ;
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-85px) translateX(25px) scale(0.15) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-85px) translateX(25px) scale(0.15) rotate(45deg);
+  }
+}
+
+.section--greeting {
+  padding-top: $desktop-padding-vertical;
+  padding-bottom: $desktop-padding-vertical;
+}
+
+.title {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 4px hsl(321, 91%, 68%);
+  color: hsl(321, 91%, 38%);
+  filter:
+    drop-shadow(0px 2px 2px hsla(0, 0%, 0%, 0.5))
+    drop-shadow(0px 0px 4px hsla(321, 91%, 38%, 0.5))
+    drop-shadow(0px 0px 10px hsla(321, 91%, 38%, 0.5))
+    drop-shadow(0px 0px 50px hsla(321, 91%, 38%, 1));
+  font-size: 76px;
+  font-weight: 900;
+  font-family: 'Sansita', sans-serif;
+
+  &--greeting {
+    text-align: right;
+  }
+}
+
+.greeting {
+  height: calc(100vh - #{$desktop-padding-vertical * 2});
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  
+  &__photo {
+    flex-basis: 40%;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+
+    &__main {
+      height: 100%;
+      filter: blur(2px);
+    }
+
+    &__silhoutte {
+      position: absolute;
+      left: -3px;
+      bottom: -3px;
+      height: 110vh;
+      cursor: pointer;
+
+      &.animation {
+        cursor: not-allowed;
+      }
+    }
+
+    &__kiss {
+      position: absolute;
+      transform: rotate(45deg) scale(0);
+
+      &.animation {
+        animation: kiss 4s ease-in-out;
+      }
+    }
+  }
+
+  &__text {
+    flex-basis: 50%;
+  }
+}

@@ -1,3 +1,9 @@
-.starter {
-  font-size: 18px;
+@import './utils/variables.scss';
+
+.container {
+  width: 100%;
+  max-width: $max-container-width;
+  padding-left: $desktop-padding-horizontal;
+  padding-right: $desktop-padding-horizontal;
+  margin: 0 auto;
 }
