@@ -6,6 +6,7 @@
 }
 
 .congratulation {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -16,22 +17,40 @@
     flex-basis: calc(55% - 35px);
   }
 
+  &__decorator {
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    transform: skew(-15deg) rotate(-15deg) translateY(-180%) translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: max-content;
+
+    filter:
+      drop-shadow(0px 2px 2px hsla(0, 0%, 0%, 0.5))
+      drop-shadow(0px 0px 4px hsla(321, 91%, 38%, 0.5))
+      drop-shadow(0px 0px 10px hsla(321, 91%, 38%, 0.5))
+      drop-shadow(0px 0px 50px hsla(321, 91%, 38%, 1));
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__icon {
+      
+    }
+  }
+
   &__photo {
     flex-basis: calc(30% - 35px);
-    position: relative;
     width: max-content;
 
     &__main {
-      max-height: 450px;
+      max-height: 550px;
       margin-left: auto;
-      filter: blur(2px);
-    }
-
-    &__silhoutte {
-      position: absolute;
-      bottom: 129px;
-      right: 40px;
-      transform: scale(1.6);
     }
   }
 }

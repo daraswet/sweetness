@@ -1,0 +1,43 @@
+@import '../../utils/variables.scss';
+
+.info__button {
+  &__icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+  }
+
+  &__text {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: rgba($color: #000000, $alpha: 0.6);
+    transform: translateY(-100%) scale(0);
+    backdrop-filter: blur(2px);
+    transition: all 0.4s;
+
+    &.visible {
+      transform: translateY(0) scale(1);
+    }
+
+    &__value {
+      width: 90%;
+      max-width: 480px;
+      padding: 30px;
+      box-sizing: border-box;
+      background-color: rgba($color: #f3f3f3, $alpha: 0.85);
+      color: $color-black;
+      border-radius: 10px;
+      text-align: center;
+    }
+  }
+}

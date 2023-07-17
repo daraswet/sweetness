@@ -1,0 +1,38 @@
+@import '../../utils/variables.scss';
+
+.section--thoughts {
+  padding-top: $desktop-padding-vertical;
+  padding-bottom: $desktop-padding-vertical;
+}
+
+.thoughts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin-bottom: 45px;
+
+  &--second {
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+  }
+
+  &__photo {
+    flex-basis: calc(31% - 35px);
+  }
+
+  &__text {
+    flex-basis: calc(69% - 35px);
+
+    &__title {
+      font-size: 24px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 30px;
+  }
+}

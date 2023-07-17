@@ -1,6 +1,7 @@
 @import './utils/variables.scss';
 
 .container {
+  position: relative;
   width: 100%;
   max-width: $max-container-width;
   padding-left: $desktop-padding-horizontal;

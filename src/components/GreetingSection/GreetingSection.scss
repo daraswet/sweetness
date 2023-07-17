@@ -3,15 +3,15 @@
 @keyframes kiss {
   0% {
     opacity: 0;
-    transform:translateY(-85px) translateX(25px) scale(0) rotate(20deg) ;
+    transform:translateY(-75px) translateX(10px) scale(0) rotate(20deg) ;
   }
   70% {
     opacity: 1;
-    transform: translateY(-85px) translateX(25px) scale(0.15) rotate(45deg);
+    transform: translateY(-75px) translateX(10px) scale(0.1) rotate(45deg);
   }
   100% {
     opacity: 0;
-    transform: translateY(-85px) translateX(25px) scale(0.15) rotate(45deg);
+    transform: translateY(-75px) translateX(10px) scale(0.1) rotate(45deg);
   }
 }
 
@@ -30,11 +30,20 @@
     drop-shadow(0px 0px 10px hsla(321, 91%, 38%, 0.5))
     drop-shadow(0px 0px 50px hsla(321, 91%, 38%, 1));
   font-size: 76px;
-  font-weight: 900;
-  font-family: 'Sansita', sans-serif;
+
 
   &--greeting {
     text-align: right;
+    margin-bottom: 15px;
+  }
+
+  &--date {
+    text-align: right;
+    font-size: 36px;
+  }
+
+  &--congratulation {
+    font-size: 36px;
   }
 }
 
@@ -45,7 +54,8 @@
   flex-wrap: wrap;
   width: 100%;
   position: relative;
-  
+  max-height: 570px;
+
   &__photo {
     flex-basis: 40%;
     display: flex;
@@ -53,15 +63,7 @@
     height: 100%;
 
     &__main {
-      height: 100%;
-      filter: blur(2px);
-    }
-
-    &__silhoutte {
-      position: absolute;
-      left: -3px;
-      bottom: -3px;
-      height: 110vh;
+      height: 550px;
       cursor: pointer;
 
       &.animation {
@@ -81,5 +83,16 @@
 
   &__text {
     flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__code {
+    margin-bottom: -5px;
+    
+    & pre {
+      background-color: rgba($color: #000000, $alpha: 0.7) !important;
+    }
   }
 }

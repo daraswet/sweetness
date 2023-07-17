@@ -1,0 +1,23 @@
+@import '../../utils/variables.scss';
+
+.section--slider {
+  padding-top: $desktop-padding-vertical;
+  padding-bottom: $desktop-padding-vertical;
+}
+
+.slider {
+  position: relative;
+
+  &__title {
+    margin-bottom: 25px;
+
+    &__span {
+      margin-left: 5px;
+      color: $color-accent-primary;
+    }
+  }
+
+  &__photo {
+    height: 400px;
+  }
+}
