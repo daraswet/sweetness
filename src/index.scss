@@ -1,4 +1,5 @@
 @import './utils/variables.scss';
+@import './utils/mixins.scss';
 
 * {
   box-sizing: border-box;
@@ -19,6 +20,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include mediaQuery(largeTablet) {
+    font-size: 13px;
+  }
 
   &::after {
     content: '';

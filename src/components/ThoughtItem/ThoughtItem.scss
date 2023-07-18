@@ -1,10 +1,16 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .thoughts__item {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  @include mediaQuery(tablet) {
+    align-items: center;
+  }
+
   cursor: pointer;
 
   &__text {
@@ -43,5 +49,13 @@
     height: 75%;
     width: max-content;
     z-index: -2;
+  }
+}
+
+.thoughts--second .thoughts__item {
+  align-items: flex-end;
+
+  @include mediaQuery(tablet) {
+    align-items: center;
   }
 }

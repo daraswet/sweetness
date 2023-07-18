@@ -27,11 +27,17 @@ export const GreetingSection: React.FC = () => {
     <section className="section section--greeting">
       <div className="greeting">
         <div className="greeting__photo">
-          <img 
+          <h1 className="title title--greeting title--greeting--mobile">
+            Happy birthday,
+          </h1>
+          <img
             className={classNames('greeting__photo__main', { 'animation': withAnimation})}
             src={photo} alt="Me & you"
             onClick={initializedAnimation}
           />
+          <h1 className="title title--greeting title--greeting--mobile">
+            my lovely boy ♥
+          </h1>
           <img className={classNames('greeting__photo__kiss', { 'animation': withAnimation})} src={kiss} alt="Kiss you" />
         </div>
         <div className="greeting__text">

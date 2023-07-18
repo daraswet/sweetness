@@ -1,9 +1,5 @@
 @import '../../utils/variables.scss';
-
-.section--congratulation {
-  padding-top: $desktop-padding-vertical;
-  padding-bottom: $desktop-padding-vertical;
-}
+@import '../../utils/mixins.scss';
 
 .congratulation {
   position: relative;
@@ -12,6 +8,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 35px;
+
+  @include mediaQuery(largeTablet) {
+    flex-direction: column-reverse;
+  }
 
   &__text {
     flex-basis: calc(55% - 35px);
@@ -35,6 +35,15 @@
       drop-shadow(0px 0px 10px hsla(321, 91%, 38%, 0.5))
       drop-shadow(0px 0px 50px hsla(321, 91%, 38%, 1));
 
+    @include mediaQuery(mediumDesktop) {
+      right: 20%;
+    }
+
+    @include mediaQuery(largeTablet) {
+      top: 67%;
+      right: -50px;
+    }
+
     &__title {
       font-size: 18px;
     }
@@ -51,6 +60,10 @@
     &__main {
       max-height: 550px;
       margin-left: auto;
+
+      @include mediaQuery(largeTablet) {
+        max-height: 435px;
+      }
     }
   }
 }

@@ -1,4 +1,5 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 @keyframes star {
   0% {
@@ -18,31 +19,83 @@
   &--1 {
     top: 320px;
     right: 395px;
+
+    @include mediaQuery(mediumDesktop) {
+      right: 275px;
+    }
+
+    @include mediaQuery(largeTablet) {
+      top: 290px;
+      left: 35px;
+    }
   }
 
   &--2 {
     top: 700px;
     right: 960px;
+
+    @include mediaQuery(mediumDesktop) {
+      top: 685px;
+      right: 645px;
+    }
+
+    @include mediaQuery(largeTablet) {
+      top: 770px;
+      right: 510px;
+    }
   }
 
   &--3 {
     top: 1155px;
     right: 30px;
+
+    @include mediaQuery(mediumDesktop) {
+      top: 905px;
+      right: 15px;
+    }
+
+    @include mediaQuery(largeTablet) {
+      top: 1020px;
+    }
   }
 
   &--4 {
     bottom: 735px;
     right: 740px;
+
+    @include mediaQuery(mediumDesktop) {
+      bottom: 675px;
+      right: 480px;
+    }
+
+    @include mediaQuery(largeTablet) {
+      bottom: 605px;
+      right: 650px;
+    }
   }
 
   &--5 {
     bottom: 350px;
     right: 95px;
+
+    @include mediaQuery(mediumDesktop) {
+      bottom: 405px;
+      right: 35px;
+    }
   }
 
   &--6 {
     bottom: 50px;
     left: 125px;
+
+    @include mediaQuery(mediumDesktop) {
+      bottom: 20px;
+      left: 50px;
+    }
+
+    @include mediaQuery(largeTablet) {
+      left: 20px;
+    }
   }
 
   &__button {

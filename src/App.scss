@@ -1,4 +1,5 @@
 @import './utils/variables.scss';
+@import './utils/mixins.scss';
 
 .container {
   position: relative;
@@ -7,4 +8,29 @@
   padding-left: $desktop-padding-horizontal;
   padding-right: $desktop-padding-horizontal;
   margin: 0 auto;
+
+  @include mediaQuery(largeTablet) {
+    padding-left: $tablet-padding-horizontal;
+    padding-right: $tablet-padding-horizontal;
+  }
+
+  @include mediaQuery(phone) {
+    padding-left: $phone-padding-horizontal;
+    padding-right: $phone-padding-horizontal;
+  }
+}
+
+.section {
+  padding-top: $desktop-padding-vertical;
+  padding-bottom: $desktop-padding-vertical;
+
+  @include mediaQuery(largeTablet) {
+    padding-top: $tablet-padding-vertical;
+    padding-bottom: $tablet-padding-vertical;
+  }
+
+  @include mediaQuery(phone) {
+    padding-top: $phone-padding-vertical;
+    padding-bottom: $phone-padding-vertical;
+  }
 }

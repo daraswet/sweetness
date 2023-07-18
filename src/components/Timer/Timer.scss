@@ -1,0 +1,8 @@
+@import '../../utils/mixins.scss';
+@import '../../utils/variables.scss';
+
+.timer h3 {
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: $color-accent-primary;
+}
