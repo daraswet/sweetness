@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Star.scss';
 import classNames from 'classnames';
 import star from '../../img/star.png';
+import { allowScroll, blockScroll } from '../../utils/scrollBody';
 
 type Props = {
   text: string,
@@ -13,14 +14,12 @@ export const Star: React.FC<Props> = ({ text, classNamePart }) => {
 
   const handleStarClick = () => {
     setIsTextVisible(true);
-
-    setTimeout(() => {
-      setIsTextVisible(false);
-    }, 5000);
+    blockScroll();
   };
 
   const handleCloseText = () => {
     setIsTextVisible(false);
+    allowScroll();
   };
 
   return (

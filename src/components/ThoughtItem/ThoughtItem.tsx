@@ -14,6 +14,10 @@ export const ThoughtItem: React.FC<Props> = ({ itemInfo }) => {
 
   const handleClickOnItem = () => {
     setIsVisible(prevState => !prevState);
+
+    setTimeout(() => {
+      setIsVisible(false);
+    }, 4000);
   };
 
   return (

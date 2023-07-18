@@ -6,6 +6,7 @@ import { Modal } from '../Modal';
 import ModalPhoto from '../../img/modal__photo.png';
 import NotificationPhoto from '../../img/notification__photo.jpg';
 import classNames from 'classnames';
+import { allowScroll, blockScroll } from '../../utils/scrollBody';
 
 export const Footer: React.FC = () => {
   const startDate = new Date('2020-11-07');
@@ -14,10 +15,12 @@ export const Footer: React.FC = () => {
 
   const handleOpenModal = () => {
     setShowModal(true);
+    blockScroll();
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
+    allowScroll();
     setIsNotificationVisible(true);
 
     setTimeout(() => {

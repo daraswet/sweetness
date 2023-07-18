@@ -3,16 +3,19 @@ import './InfoButton.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
+import { allowScroll, blockScroll } from '../../utils/scrollBody';
 
 export const InfoButton = () => {
   const [isTextVisible, setIsTextVisible] = useState(false);
 
   const handleButtonClick = () => {
     setIsTextVisible(true);
+    blockScroll();
   };
 
   const handleTextClick = () => {
     setIsTextVisible(false);
+    allowScroll();
   };
 
   return (

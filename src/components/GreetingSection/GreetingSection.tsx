@@ -6,7 +6,10 @@ import classNames from 'classnames';
 
 import Prism from 'prismjs';
 import 'prismjs/themes/prism.css';
-import 'prismjs/components/prism-java'; // Import other language components if needed
+import 'prismjs/components/prism-java';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShare } from '@fortawesome/free-solid-svg-icons';
 
 export const GreetingSection: React.FC = () => {
   const [withAnimation, setWithAnimation] = useState(false);
@@ -35,15 +38,21 @@ export const GreetingSection: React.FC = () => {
             src={photo} alt="Me & you"
             onClick={initializedAnimation}
           />
+          <FontAwesomeIcon
+            icon={faShare}
+            rotation={180}
+            size="2xl"
+            className="greeting__photo__decorator"
+          />
           <h1 className="title title--greeting title--greeting--mobile">
-            my lovely boy ♥
+            my lovely boy
           </h1>
           <img className={classNames('greeting__photo__kiss', { 'animation': withAnimation})} src={kiss} alt="Kiss you" />
         </div>
         <div className="greeting__text">
           <div className="greeting__text__title__wrapper">
             <h1 className="title title--greeting">
-              Happy Birthday, my lovely boy ♥
+              <em>Happy Birthday, my lovely boy ♥</em>
             </h1>
             <h2 className="title--date">
               19.07.2023
@@ -52,16 +61,16 @@ export const GreetingSection: React.FC = () => {
           <div className="greeting__code">
             <pre>
               <code className="language-java">
-{`public class BirthdayWishes {
-    public static void main(String[] args) {
-      String[] phrases = {
-        "Happy birthday,",
-        "my lovely boy",
-      };
-      for (String phrase : phrases) {
-          System.out.println(phrase);
-      }
+{`from datetime import data
+    public class BirthdayMyLove {
+    public static void main (String [] args){
+      today = date.today ();
+      birthday = date (2023,07,19);
+      if (today = birthday ) {
+        print ("Congratulations, lovely!");
+      KISS_YOU ();
     }
+  }
 }`}
               </code>
             </pre>

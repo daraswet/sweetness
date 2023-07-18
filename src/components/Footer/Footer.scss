@@ -60,6 +60,7 @@
     cursor: pointer;
     transform: translateX(100%);
     transition: all 0.4s ease-in-out;
+    z-index: 2;
 
     @include mediaQuery(phone) {
       width: 290px;

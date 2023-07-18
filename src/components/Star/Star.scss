@@ -15,6 +15,7 @@
 
 .star {
   position: absolute;
+  z-index: 3;
 
   &--1 {
     top: 320px;
@@ -35,8 +36,8 @@
     }
 
     @include mediaQuery(phone) {
-      top: -8px;
-      left: 170px;
+      top: 768px;
+      left: -20px;
     }
   }
 
@@ -60,8 +61,8 @@
     }
 
     @include mediaQuery(phone) {
-      top: 1069px;
-      right: 218px;
+      top: 1219px;
+      right: 40%;
     }
   }
 
@@ -84,7 +85,7 @@
     }
 
     @include mediaQuery(phone) {
-      top: 752px;
+      top: 905px;
       right: -15px;
     }
   }
@@ -109,8 +110,8 @@
     }
 
     @include mediaQuery(phone) {
-      bottom: 965px;
-      right: 188px;
+      bottom: 1060px;
+      right: 224px;
     }
   }
 
