@@ -22,6 +22,7 @@ import sixteenth from '../../img/16.jpg';
 import seventeenth from '../../img/17.jpg';
 import eighteenth from '../../img/18.jpg';
 import nineteenth from '../../img/19.jpg';
+import prelast from '../../img/prelast.jpg';
 import twenty from '../../img/20.jpg';
 import { Star } from '../Star';
 
@@ -72,7 +73,7 @@ export const SliderSection:React.FC = () => {
       image: eleventh,
     },
     {
-      title: 'а потом, глядя на эту фотку, смеялись и говорили, что выглядим как парочка в глубоком браке?',
+      title: 'как потом, глядя на эту фотку, смеялись и говорили, что выглядим как парочка в глубоком браке?',
       image: twelfth,
     },
     {
@@ -80,11 +81,11 @@ export const SliderSection:React.FC = () => {
       image: thirteenth,
     },
     {
-      title: 'и сказали, что обязательно попробуем ещё',
+      title: 'как сказали, что обязательно попробуем ещё?',
       image: fourthteenth,
     },
     {
-      title: 'а как поехали гулять и нашли это невероятно красивое место ?',
+      title: 'как поехали гулять и нашли это невероятно красивое место?',
       image: fifteenth,
     },
     {
@@ -102,6 +103,10 @@ export const SliderSection:React.FC = () => {
     {
       title: 'и много целовались...',
       image: nineteenth,
+    },
+    {
+      title: 'как между нами было тысячи километров, но мы все равно оставались рядышком?',
+      image: prelast,
     },
     {
       title: 'как наконец-то встретились после стольких месяцев расстояния, переехали на долгожданную квартиру и встретили вдвоём наш первый новый год в новом городе?',

@@ -7,6 +7,14 @@
   &__title {
     margin-bottom: 25px;
 
+    @include mediaQuery(tablet) {
+      font-size: 22px;
+    }
+
+    @include mediaQuery(phone) {
+      font-size: 18px;
+    }
+
     &__span {
       margin-left: 5px;
       color: $color-accent-primary;

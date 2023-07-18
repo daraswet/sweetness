@@ -2,7 +2,9 @@
 @import '../../utils/variables.scss';
 
 .section--footer {
-
+  @include mediaQuery(phone) {
+    margin-bottom: 20px;
+  }
 }
 
 .timer {
