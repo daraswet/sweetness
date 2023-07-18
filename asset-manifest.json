@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/sweetness/static/css/main.21435b0e.chunk.css",
-    "main.js": "/sweetness/static/js/main.7d4a0578.chunk.js",
-    "main.js.map": "/sweetness/static/js/main.7d4a0578.chunk.js.map",
+    "main.css": "/sweetness/static/css/main.64414fd9.chunk.css",
+    "main.js": "/sweetness/static/js/main.9cc431f8.chunk.js",
+    "main.js.map": "/sweetness/static/js/main.9cc431f8.chunk.js.map",
     "runtime-main.js": "/sweetness/static/js/runtime-main.b49752b6.js",
     "runtime-main.js.map": "/sweetness/static/js/runtime-main.b49752b6.js.map",
     "static/css/2.18af7283.chunk.css": "/sweetness/static/css/2.18af7283.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.2f50b360.chunk.js.map": "/sweetness/static/js/2.2f50b360.chunk.js.map",
     "index.html": "/sweetness/index.html",
     "static/css/2.18af7283.chunk.css.map": "/sweetness/static/css/2.18af7283.chunk.css.map",
-    "static/css/main.21435b0e.chunk.css.map": "/sweetness/static/css/main.21435b0e.chunk.css.map",
+    "static/css/main.64414fd9.chunk.css.map": "/sweetness/static/css/main.64414fd9.chunk.css.map",
     "static/js/2.2f50b360.chunk.js.LICENSE.txt": "/sweetness/static/js/2.2f50b360.chunk.js.LICENSE.txt",
     "static/media/1.2319a7ad.jpg": "/sweetness/static/media/1.2319a7ad.jpg",
     "static/media/10.f2347a83.jpg": "/sweetness/static/media/10.f2347a83.jpg",
@@ -46,6 +46,7 @@
     "static/media/man_sticker--6.2ea4bac5.png": "/sweetness/static/media/man_sticker--6.2ea4bac5.png",
     "static/media/modal__photo.65d3f1d0.png": "/sweetness/static/media/modal__photo.65d3f1d0.png",
     "static/media/notification__photo.9a4621c0.jpg": "/sweetness/static/media/notification__photo.9a4621c0.jpg",
+    "static/media/prelast.288dcd56.jpg": "/sweetness/static/media/prelast.288dcd56.jpg",
     "static/media/star.4507c879.png": "/sweetness/static/media/star.4507c879.png",
     "static/media/ThoughtItem.scss": "/sweetness/static/media/thougths__decorator.d2f853ee.png",
     "static/media/women_sticker--1.a646b6c2.png": "/sweetness/static/media/women_sticker--1.a646b6c2.png",
@@ -59,7 +60,7 @@
     "static/js/runtime-main.b49752b6.js",
     "static/css/2.18af7283.chunk.css",
     "static/js/2.2f50b360.chunk.js",
-    "static/css/main.21435b0e.chunk.css",
-    "static/js/main.7d4a0578.chunk.js"
+    "static/css/main.64414fd9.chunk.css",
+    "static/js/main.9cc431f8.chunk.js"
   ]
 }
