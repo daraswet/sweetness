@@ -28,6 +28,16 @@
       top: 290px;
       left: 35px;
     }
+
+    @include mediaQuery(smallTablet) {
+      top: 134px;
+      left: 16px;
+    }
+
+    @include mediaQuery(phone) {
+      top: -8px;
+      left: 170px;
+    }
   }
 
   &--2 {
@@ -43,6 +53,16 @@
       top: 770px;
       right: 510px;
     }
+
+    @include mediaQuery(smallTablet) {
+      top: 925px;
+      right: 355px;
+    }
+
+    @include mediaQuery(phone) {
+      top: 1069px;
+      right: 218px;
+    }
   }
 
   &--3 {
@@ -56,6 +76,16 @@
 
     @include mediaQuery(largeTablet) {
       top: 1020px;
+    }
+
+    @include mediaQuery(smallTablet) {
+      top: 700px;
+      right: -20px;
+    }
+
+    @include mediaQuery(phone) {
+      top: 752px;
+      right: -15px;
     }
   }
 
@@ -72,6 +102,16 @@
       bottom: 605px;
       right: 650px;
     }
+
+    @include mediaQuery(smallTablet) {
+      bottom: 760px;
+      right: 378px;
+    }
+
+    @include mediaQuery(phone) {
+      bottom: 965px;
+      right: 188px;
+    }
   }
 
   &--5 {
@@ -81,6 +121,20 @@
     @include mediaQuery(mediumDesktop) {
       bottom: 405px;
       right: 35px;
+    }
+
+    @include mediaQuery(tablet) {
+      bottom: 325px;
+    }
+
+    @include mediaQuery(smallTablet) {
+      bottom: 280px;
+      right: -35px;
+    }
+
+    @include mediaQuery(phone) {
+      bottom: 242px;
+      right: -16px;
     }
   }
 
@@ -95,6 +149,16 @@
 
     @include mediaQuery(largeTablet) {
       left: 20px;
+    }
+
+    @include mediaQuery(smallTablet) {
+      left: 10px;
+      bottom: -130px;
+    }
+
+    @include mediaQuery(phone) {
+      left: -15px;
+      bottom: -140px;
     }
   }
 

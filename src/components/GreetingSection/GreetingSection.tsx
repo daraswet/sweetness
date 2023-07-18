@@ -55,7 +55,7 @@ export const GreetingSection: React.FC = () => {
 {`public class BirthdayWishes {
     public static void main(String[] args) {
       String[] phrases = {
-        "Happy birthday",
+        "Happy birthday,",
         "my lovely boy",
       };
       for (String phrase : phrases) {
