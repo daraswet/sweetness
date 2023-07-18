@@ -1,11 +1,17 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .info__button {
   &__icon {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 40px;
+    right: 40px;
     cursor: pointer;
+
+    @include mediaQuery(smallTablet) {
+      bottom: 25px;
+      right: 25px;
+    }
   }
 
   &__text {

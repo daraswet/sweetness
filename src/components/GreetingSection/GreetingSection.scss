@@ -38,10 +38,12 @@
 
     @include mediaQuery(mediumDesktop) {
       font-size: 64px;
+      -webkit-text-stroke: 3px hsl(321, 91%, 68%);
     }
 
     @include mediaQuery(smallDesktop) {
       font-size: 56px;
+      -webkit-text-stroke: 2px hsl(321, 91%, 68%);
     }
 
     @include mediaQuery (largeTablet) {
@@ -54,6 +56,7 @@
 
     @include mediaQuery(largeTablet) {
       display: block;
+      -webkit-text-stroke: 2px hsl(321, 91%, 68%);
     }
 
     @include mediaQuery(tablet) {
@@ -62,6 +65,7 @@
 
     @include mediaQuery(smallTablet) {
       font-size: 36px;
+      -webkit-text-stroke: 1px hsl(321, 91%, 68%);
     }
   }
 
@@ -69,8 +73,20 @@
     text-align: right;
     font-size: 36px;
 
-    @include mediaQuery (largeTablet) {
+    @include mediaQuery(largeTablet) {
       font-size: 24px;
+    }
+
+    @include mediaQuery(tablet) {
+      font-size: 18px
+    }
+
+    @include mediaQuery(smallTablet) {
+      font-size: 14px;
+    }
+
+    @include mediaQuery(phone) {
+      font-size: 12px;
     }
   }
 
@@ -89,9 +105,17 @@
   position: relative;
   max-height: 570px;
 
+  @include mediaQuery(mediumDesktop) {
+    align-items: center;
+  }
+
   @include mediaQuery(largeTablet) {
     display: block;
     margin-bottom: 320px;
+  }
+
+  @include mediaQuery(smallTablet) {
+    margin-bottom: 215px;
   }
 
   &__photo {
@@ -108,8 +132,41 @@
       gap: 15px;
     }
 
+    @include mediaQuery(tablet) {
+      gap: 0;
+      padding-top: 50px;
+      margin-bottom: 5px;
+    }
+
+    @include mediaQuery(smallTablet) {
+      padding-top: 20px;
+    }
+
+    @include mediaQuery(smallTablet) {
+      margin-bottom: -25px;
+    }
+
+    @include mediaQuery(phone) {
+      padding-top: 0;
+      margin-top: -25px;
+      margin-bottom: -45px;
+    }
+
     &__main {
       cursor: pointer;
+
+      @include mediaQuery(tablet) {
+        height: 85%;
+      }
+
+      @include mediaQuery(smallTablet) {
+        height: 80%;
+      }
+
+      @include mediaQuery(phone) {
+        height: 60%;
+        margin-left: 18px;
+      }
 
       &.animation {
         cursor: not-allowed;
@@ -138,9 +195,13 @@
     margin-left: auto;
     margin-bottom: -5px;
 
-    @include mediaQuery (largeTablet) {
+    @include mediaQuery(largeTablet) {
       margin-top: 15px;
       width: 100%;
+    }
+
+    @include mediaQuery(phone) {
+      margin-top: 0;
     }
     
     & pre {

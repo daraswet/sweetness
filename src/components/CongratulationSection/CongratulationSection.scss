@@ -13,6 +13,10 @@
     flex-direction: column-reverse;
   }
 
+  @include mediaQuery(phone) {
+    gap: 15px;
+  }
+
   &__text {
     flex-basis: calc(55% - 35px);
   }
@@ -44,6 +48,21 @@
       right: -50px;
     }
 
+    @include mediaQuery(tablet) {
+      top: 60%;
+      right: -125px;
+    }
+
+    @include mediaQuery(smallTablet) {
+      top: 48%;
+      right: -120px
+    }
+
+    @include mediaQuery(phone) {
+      top: 37%;
+      right: -105px;
+    }
+
     &__title {
       font-size: 18px;
     }
@@ -57,12 +76,28 @@
     flex-basis: calc(30% - 35px);
     width: max-content;
 
+    @include mediaQuery(phone) {
+      margin-right: auto;
+    }
+
     &__main {
       max-height: 550px;
       margin-left: auto;
 
       @include mediaQuery(largeTablet) {
         max-height: 435px;
+      }
+
+      @include mediaQuery(tablet) {
+        max-height: 350px;
+      }
+
+      @include mediaQuery(smallTablet) {
+        max-height: 270px;
+      }
+
+      @include mediaQuery(phone) {
+        max-height: 235px;
       }
     }
   }

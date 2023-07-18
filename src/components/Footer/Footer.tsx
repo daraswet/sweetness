@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react';
 import './Footer.scss';
-import ReactDOM from 'react-dom';
 import { Timer } from '../Timer';
 import { Modal } from '../Modal';
 import ModalPhoto from '../../img/modal__photo.png';
@@ -12,7 +11,6 @@ export const Footer: React.FC = () => {
   const startDate = new Date('2020-11-07');
   const [showModal, setShowModal] = useState(false);
   const [isNotificationVisible, setIsNotificationVisible] = useState(false);
-  const modalRoot = document.getElementById('modal__root');
 
   const handleOpenModal = () => {
     setShowModal(true);
@@ -51,22 +49,16 @@ export const Footer: React.FC = () => {
             {`Правильный выбор сделан, твоя жопка довольная)`}
           </p>
         </div>
-        {showModal && modalRoot && (
-          ReactDOM.createPortal(
-            <Modal>
-              <img src={ModalPhoto} alt="We will kill you!" />
-              <h3>Are you ahuel? 🤨</h3>
-              <button
-                type="button"
-                onClick={handleCloseModal}
-              >
-                Отменить заявку
-              </button>
-            </Modal>,
-            modalRoot,
-          )
-        )}
-        <div id="modal__root"></div>
+        <Modal isVisible={showModal}>
+          <img src={ModalPhoto} alt="We will kill you!" />
+          <h3>Are you ahuel? 🤨</h3>
+          <button
+            type="button"
+            onClick={handleCloseModal}
+          >
+            Отменить заявку
+          </button>
+        </Modal>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .slider {
   position: relative;
@@ -14,5 +15,17 @@
 
   &__photo {
     height: 400px;
+
+    @include mediaQuery(tablet) {
+      height: 280px;
+    }
+
+    @include mediaQuery(smallTablet) {
+      height: 250px;
+    }
+
+    @include mediaQuery(phone) {
+      height: 185px;
+    }
   }
 }

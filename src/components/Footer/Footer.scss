@@ -13,6 +13,16 @@
   max-width: 550px;
   margin: 0 auto;
 
+  @include mediaQuery(tablet) {
+    max-width: 445px;
+  }
+
+  @include mediaQuery(smallTablet) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
   &__button {
     display: block;
     min-width: max-content;
@@ -41,14 +51,18 @@
     width: 320px;
     height: auto;
     padding: 7px;
-    background-color: rgba($color: #f3f3f3, $alpha: 0.85);
+    background-color: rgba($color: #f3f3f3, $alpha: 0.95);
     overflow: hidden;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
     cursor: pointer;
-
     transform: translateX(100%);
     transition: all 0.4s ease-in-out;
+
+    @include mediaQuery(phone) {
+      width: 290px;
+      padding: 4px;
+    }
 
     &.visible {
       transform: translateX(0);
@@ -58,11 +72,17 @@
       display: block;
       width: 70%;
       margin: 0 auto 5px;
+      border-radius: 5px;
+
+      @include mediaQuery(phone) {
+        width: 60%;
+      }
     }
 
     & p {
       text-align: center;
       font-size: 13px;
+      font-weight: 700;
       margin-bottom: 8px;
       color: $color-accent-primary;
     }

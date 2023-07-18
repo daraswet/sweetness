@@ -128,7 +128,7 @@ export const SliderSection:React.FC = () => {
           onChange={handleSlideChange}
           showArrows={true}
           showStatus={false}
-          showIndicators={true}
+          showIndicators={false}
           showThumbs={false}
           infiniteLoop={true}
         >
