@@ -1,18 +1,33 @@
 @import '../../utils/variables.scss';
 @import '../../utils/mixins.scss';
 
-@keyframes kiss {
+@keyframes kissDesktop {
   0% {
     opacity: 0;
-    transform:translateY(-75px) translateX(10px) scale(0) rotate(20deg) ;
+    transform:translateY(-75px) translateX(50px) scale(0) rotate(20deg) ;
   }
   70% {
     opacity: 1;
-    transform: translateY(-75px) translateX(10px) scale(0.1) rotate(45deg);
+    transform: translateY(-75px) translateX(50px) scale(0.1) rotate(45deg);
   }
   100% {
     opacity: 0;
-    transform: translateY(-75px) translateX(10px) scale(0.1) rotate(45deg);
+    transform: translateY(-75px) translateX(50px) scale(0.1) rotate(45deg);
+  }
+}
+
+@keyframes kissMobile {
+  0% {
+    opacity: 0;
+    transform:translateY(-45px) translateX(40px) scale(0) rotate(20deg) ;
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-45px) translateX(40px) scale(0.1) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-45px) translateX(40px) scale(0.1) rotate(45deg);
   }
 }
 
@@ -178,7 +193,11 @@
       transform: rotate(45deg) scale(0);
 
       &.animation {
-        animation: kiss 4s ease-in-out;
+        animation: kissDesktop 4s ease-in-out;
+
+        @include mediaQuery(tablet) {
+          animation: kissMobile 4s ease-in-out;
+        }
       }
     }
   }
